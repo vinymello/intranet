@@ -74,7 +74,18 @@ div{
     padding: 5px;
 }
 div#menu{
-    max-width: 15%;
+    max-width: 20%;
+}
+div#menu > ul > li{
+    background-color: var(--AzulClaro);
+    font-family: var(--destaque);
+    font-weight: bold;
+    padding: 5px;
+    text-transform: uppercase;
+    margin: -5px;
+}
+div#menu > ul > li > a{
+    text-decoration: none;
 }
 div#content{
     max-width: 60%;
@@ -85,9 +96,14 @@ div#content > h1{
     background-image: linear-gradient(to right, var(--Azul), transparent);
     padding: 5px;
     margin-bottom: 5px;
-    max-width: 15%;
 }
-div#marketing{}
+div#marketing{
+    max-width: 20%;
+    text-align: center;
+}
+div#marketing > img{
+    max-width: 100%;
+}
 footer{
     background-image: linear-gradient(to bottom, var(--LaranjaEscuro), var(--Laranja), var(--LaranjaEscuro));
     text-align: center;
