@@ -68,44 +68,62 @@ header > hgroup > h1{
     font-size: 3em;
     padding-top: 80px;
 }
-div{
-    display: inline-block;
+main{
+    max-width: 800px;
+    margin: auto;
     background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     padding: 5px;
 }
-div#menu{
-    max-width: 20%;
+section{
+    display: inline-block;
+    width: 70%;
 }
-div#menu > ul > li{
+section > nav{
+    display: inline-block;
+    width: 20%;
+    min-height: 100%;
+}
+section > nav > ul{
+    list-style: none;
+    line-height: 1.5em;
+}
+section > nav > ul > li{
     background-color: var(--AzulClaro);
-    font-family: var(--destaque);
-    font-weight: bold;
     padding: 5px;
+    font-family: var(--destaque);
     text-transform: uppercase;
-    margin: -5px;
-}
-div#menu > ul > li > a{
-    text-decoration: none;
-}
-div#content{
-    max-width: 60%;
-}
-div#content > h1{
-    font-family: var(--destaque);
-    color: var(--LaranjaEscuro);
-    background-image: linear-gradient(to right, var(--Azul), transparent);
-    padding: 5px;
-    margin-bottom: 5px;
-}
-div#marketing{
-    max-width: 20%;
+    margin: 0px -5px 5px -5px;
     text-align: center;
 }
-div#marketing > img{
-    max-width: 100%;
+section > nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+article{
+    display: inline-block;
+    width: 75%;
+    padding: 5px;
+    margin-left: 10px;
+}
+article > h1{
+    background-image: linear-gradient(to right, var(--Azul), transparent);
+    color: var(--LaranjaEscuro);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+article > p{
+    text-indent: 30px;
+    text-align: justify;
+}
+aside{
+    display: inline-block;
+    width: 15%;
 }
 footer{
     background-image: linear-gradient(to bottom, var(--LaranjaEscuro), var(--Laranja), var(--LaranjaEscuro));
     text-align: center;
     color: white;
+    margin-top: 5px;
 }
