@@ -105,11 +105,11 @@ section > nav > ul > li > a{
 }
 article{
     display: inline-block;
-    max-width: 75%;
-    min-width: 75%;
+    max-width: 43%;
     padding: 5px;
     margin-left: 10px;
     margin-top: 3%;
+    position: absolute;
 }
 article > h1{
     background-image: linear-gradient(to right, var(--Azul), transparent);
