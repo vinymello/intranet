@@ -26,14 +26,23 @@ article{
     padding: 5px;
     margin-bottom: 5px;
 }
-article > aside{
-    position: relative;
-}
-aside{
+article > div{
     border: 1px dashed black;
     padding: 5px;
-    width: 27%;
-    min-height: 96%;
+    display: inline-block;
+    max-width: 60%;
+}
+article > aside{
+    border: 1px dashed black;
+    padding: 5px;
+    display: inline-block;
+    max-width: 35%;
+}
+main > aside{
+    border: 1px dashed black;
+    padding: 5px;
+    width: 25%;
+    min-height: 84%;
     display: inline-block;
     position: absolute;
     margin-left: 5px;
