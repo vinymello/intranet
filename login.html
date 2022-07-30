@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mello System - Intranet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <form action="test.php" method="post">
+        <fieldset>
+            <legend>Área Restrita</legend>
+            <label for="isuer">Usuário</label>
+            <input type="text" name="user" id="isuer" autocomplete="username" placeholder="Entre com seu usário"><br>
+            <label for="ipwd">Senha</label>
+            <input type="password" name="pwd" id="ipwd" autocomplete="current-password" placeholder="Entre com sua senha">
+        </fieldset>
+        <p><a href="#">Esqueci a senha</a></p>
+        <p>
+            <input type="submit" name="enter" value="Entrar" class="button">
+            <input type="submit" name="register" value="Cadastrar" class="button">
+        </p>
+    </form>
+</body>
+</html>
