@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mello System - Intranet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <table>
+        <caption><h1>Carteira de Investimento</h1></caption>
+        <thead>
+            <tr>
+                <th scope="col">Tipo de Investimento</th>
+                <th scope="col">Descrição da Cota</th>
+                <th scope="col">Quantidade de Cotas</th>
+                <th scope="col">Valor Aportado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>R$ </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row" colspan="2">Total</th>
+            <td>0</td>
+            <td>R$ 0</td>
+        </tfoot>
+    </table>
+    <form action="test.php" method = "post">
+        <fieldset>
+            <legend>Adicionar um novo aporte</legend>
+            <label for="operation">Novo aporte</label>
+            <select name="operation" id="operation">
+                <option value="COMPRA" selected>COMPRA</option>
+                <option value="VENDA">VENDA</option>
+            </select>
+            <select name="investment" id="income">
+                <option value="RENDA VARIÁVEL" selected>RENDA VARIÁVEL</option>
+                <option value="RENDA FIXA">RENDA FIXA</option>
+            </select>
+            <select name="invest_type" id="investment">
+                <option value="AÇÃO">AÇÃO</option>
+                <option value="FII" selected>FII</option>
+            </select></br>
+            <label for="date">Data do Aporte</label>
+            <input type="date" name = "date" id="date" required></br>
+            <label for="quote">Cota</label>
+            <input type="text" name = "quote_descr" id="quote" list="quote_list" autocomplete="name" required></br>
+            <datalist id="quote_list">
+                <option>MXRF11</option>
+                <option>VGHF11</option>
+                <option>KNRI11</option>
+                <option>XPLG11</option>
+                <option>BPML11</option>
+                <option>ITSA4</option>
+            </datalist>
+            <label for="num_quote">Quantidade de Cotas</label>
+            <input type="number" name = "quote_number" id="num_quote" required></br>
+            <label for="quote_value">Valor da Cota: R$ </label><input type="float" name = "value" id="quote_value" autocomplete="transaction-currency" required></br>
+        </fieldset>
+        <p>
+            <input type="submit" name = "transaction" class = "button" value = "Aportar">
+        </p>
+    </form>
+</body>
+</html>

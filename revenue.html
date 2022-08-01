@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mello System - Intranet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <form action="test.php" method="post">
+        <fieldset>
+            <legend>Adiocionar uma nova receita</legend>
+            <label for="">Descrição</label>
+            <input type="text" name="description" id="idescription" autocomplete="name" list="revenue_list" required>
+            <datalist id="revenue_list">
+                <option>Pagamento</option>
+                <option>Adiantamento</option>
+                <option>Rendimento</option>
+                <option>Férias</option>
+                <option>Bônus</option>
+            </datalist>
+            <label for="ivalue">Valor Recebido R$</label>
+            <input type="number" name="value" id="ivalue" autocomplete="transaction-currency" required>
+            <label for="idate">Data</label>
+            <input type="date" name="date" id="idate" required>
+            <input type="submit" name="add" class="button" value="Adicionar"><br>
+        </fieldset>
+    </form>
+    <form action="test.php" method = "get" class="filter">
+        <label for="ifilter">Selecione o período que deseja visualizar</label>
+        <input type="month" name="filter" id="ifilter" placeholder="aaaa-mm" value="2022-08">
+        <input type="submit" name="select" class="button" value="Selecionar">
+    </form>
+    <table>
+        <caption><h1>Receitas do Mês</h1></caption>
+        <thead>
+            <th scope="col">Descrição</th>
+            <th>Valor Recebido</th>
+        </thead>
+        <tbody>
+            <td></td>
+            <td>R$ 0</td>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total</th>
+            <td>R$ 0</td>
+        </tfoot>
+    </table>
+</body>
+</html>

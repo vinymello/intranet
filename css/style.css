@@ -35,6 +35,9 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+.filter{
+    text-align: center;
+}
 em{
     background-color: var(--AzulClaro);
     color: var(--LaranjaEscuro);
@@ -67,6 +70,8 @@ header > hgroup{
 header > hgroup > h1{
     font-size: 3em;
     padding-top: 80px;
+    background: none;
+    color: white;
 }
 main{
     max-width: 75vw;
@@ -75,6 +80,12 @@ main{
     border-radius: 0px 0px 20px 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     padding: 5px;
+}
+h1{
+    background-image: linear-gradient(to right, var(--Azul), transparent);
+    color: var(--LaranjaEscuro);
+    padding: 5px;
+    margin-bottom: 10px;
 }
 section{
     display: inline-block;
@@ -111,12 +122,6 @@ article{
     margin-top: 3%;
     position: absolute;
 }
-article > h1{
-    background-image: linear-gradient(to right, var(--Azul), transparent);
-    color: var(--LaranjaEscuro);
-    padding: 5px;
-    margin-bottom: 10px;
-}
 article > p{
     text-indent: 30px;
     text-align: justify;
@@ -133,8 +138,8 @@ aside > a > img{
     max-height: 80%;
 }
 form{
-    background-color: white;
     padding: 10px;
+    margin: auto;
 }
 form > p{
     text-align: right;
@@ -157,6 +162,27 @@ form > fieldset > legend{
 }
 form > fieldset > label{
     padding: 5px;
+}
+table{
+    padding: 10px;
+    border-collapse: collapse;
+    margin: 10px auto 10px auto;
+}
+td, th{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+thead, tfoot{
+    background-color: var(--Laranja);
+    color: white;
+    text-transform: uppercase;
+}
+tbody > tr > th{
+    background-color: var(--AzulEscuro);
+}
+tbody > tr:nth-child(odd){
+    background-color: var(--AzulClaro);
 }
 footer{
     background-image: linear-gradient(to bottom, var(--LaranjaEscuro), var(--Laranja), var(--LaranjaEscuro));
