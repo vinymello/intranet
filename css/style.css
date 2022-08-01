@@ -51,6 +51,7 @@ header{
     text-align: center;
     color: white;
     height: 175px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 header > img{
     position: absolute;
@@ -74,8 +75,9 @@ header > hgroup > h1{
     color: white;
 }
 main{
-    max-width: 75vw;
+    max-width: 70vw;
     margin: auto;
+    text-align: center;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -89,49 +91,54 @@ h1{
 }
 section{
     display: inline-block;
-    min-width: 75%;
-    max-width: 80%;
+    max-width: 70%;
+    max-height: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: justify;
+    text-indent: 30px;
+    vertical-align: top;
 }
-section > nav{
+div{
+    width: 100%;
+    text-align: justify;
+    margin: -5px 0px 10px -5px;
+}
+div > nav{
     display: inline-block;
     max-width: 20%;
-    min-width: 15%;
     min-height: 100%;
+    vertical-align: top;
 }
-section > nav > ul{
+div > nav > ul{
     list-style: none;
     line-height: 1.5em;
 }
-section > nav > ul > li{
+div > nav > ul > li{
     background-color: var(--AzulClaro);
     padding: 5px;
+    margin-bottom: 5px;
     font-family: var(--destaque);
     text-transform: uppercase;
-    margin: 0px -5px 5px -5px;
     text-align: center;
 }
-section > nav > ul > li > a{
+div > nav > ul > li > a{
     text-decoration: none;
     color: white;
 }
-article{
+iframe{
     display: inline-block;
-    max-width: 43%;
-    padding: 5px;
-    margin-left: 10px;
-    margin-top: 3%;
-    position: absolute;
-}
-article > p{
-    text-indent: 30px;
-    text-align: justify;
+    min-width: 78%;
+    min-height: 100vh;
+    vertical-align: top;
+    text-align: right;
 }
 aside{
     display: inline-block;
-    min-width: 15%;
     max-width: 20%;
     margin-top: 10px;
-    position: absolute;
+    text-align: right;
+    vertical-align: top;
 }
 aside > a > img{
     max-width: 80%;
