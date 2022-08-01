@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mello System - Intranet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <table>
+        <caption><h1>Contas Cadastradas</h1></caption>
+        <thead>
+            <tr>
+                <th>Código do Banco</th>
+                <th>Banco Cadastrado</th>
+                <th>Agência</th>
+                <th>Conta</th>
+                <th>Tipo da Conta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="test.php" method="post">
+        <fieldset>
+            <legend>Cadastre sua conta</legend>
+            <label for="icode">Código da Conta</label>
+            <input type="number" name="code" id="icode"><br>
+            <label for="ibank">Banco</label>
+            <input type="text" name="bank" id="ibank"><br>
+            <label for="iagency">Agência</label>
+            <input type="number" name="agency" id="iagency"><br>
+            <label for="iaccount">Conta</label>
+            <input type="number" name="account" id="iaccount"><br>
+            <label for="itype">Tipo da Conta</label>
+            <select name="account-type" id="itype">
+                <option value="corrente">Correte</option>
+                <option value="poupanca">Poupança</option>
+                <option value="investimento">Investimento</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>
