@@ -9,122 +9,124 @@
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <form action="test.php" method = "get" class="filter">
-        <label for="ifilter">Selecione o período que deseja visualizar</label>
-        <input type="month" name="filter" id="ifilter" placeholder="aaaa-mm" value="2022-08">
-        <input type="submit" name="select" class="button" value="Selecionar">
-    </form>
-    <table>
-        <caption><h1>Folha de Pagamento</h1></caption>
-        <thead>
-            <tr>
-                <th rowspan="3">#</th>
-                <th scope="row">Empregadora</th>
-                <td colspan="4">ATT Global Network Services Brasil Ltda</td>
-            </tr>
-            <tr>
-                <th scope="row">CNPJ</th>
-                <td colspan="4">03.341.093/0001-06</td>
-            </tr>
-            <tr>
-                <th scope="row">Endereço</th>
-                <td colspan="4">Rua James Joule, 65 - 6 e 7 andar - Cidade Monções - São Paulo - SP</td>
-            </tr>
-            <tr>
-                <th scope="col">Matricula</th>
-                <th scope="col" colspan="5">EMpregado</th>
-            </tr>
-            <tr>
-                <td>#</td>
-                <td colspan="5">#user</td>
-            </tr>
-            <tr>
-                <th scope="col" colspan="2">Cargo</th>
-                <th scope="col">Data de Admissão</th>
-                <th scope="col" colspan="3">Endereço</th>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-                <td></td>
-                <td colspan="3"></td>
-            </tr>
-            <tr>
-                <th scope="col" colspan="2">Bairro</th>
-                <th scope="col" colspan="2">Cidade</th>
-                <th scope="col">CEP</th>
-                <th scope="col">UF</th>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-                <td colspan="2"></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="col" colspan="2">PIS</th>
-                <th scope="col" colspan="2">CPF</th>
-                <th scope="col">Período</th>
-                <th scope="col">Data de Pagamento</th>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-                <td colspan="2"></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="col">Salário Base</th>
-                <th scope="col" colspan="3">Banco de Pagamento</th>
-                <th scope="col">Agência</th>
-                <th scope="col">Conta</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3"></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="col">Período</th>
-                <th scope="col">Evento</th>
-                <th scope="col">Descrição</th>
-                <th scope="col">Referência</th>
-                <th scope="col">Proventos</th>
-                <th scope="col">Descontos</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>R$ 0</td>
-                <td>R$ 0</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th scope="col">Base INSS</th>
-                <th scope="col">Base FGTS</th>
-                <th scope="col">Base IRRF</th>
-                <th scope="col">FGTS Recolhido</th>
-                <th scope="col">Total de Proventos</th>
-                <th scope="col">Total de Descontos</th>
-            </tr>
-            <tr>
-                <td>R$ 0</td>
-                <td>R$ 0</td>
-                <td>R$ 0</td>
-                <td>R$ 0</td>
-                <td>R$ 0</td>
-                <td>R$ 0</td>
-            </tr>
-            <tr>
-                <th scope="row" colspan="5">Líquido a Receber</th>
-                <td>R$ 0</td>
-            </tr>
-        </tfoot>
-    </table>
+    <div class="content">
+        <form action="test.php" method = "get" class="filter">
+            <label for="ifilter">Selecione o período que deseja visualizar</label>
+            <input type="month" name="filter" id="ifilter" placeholder="aaaa-mm" value="2022-08">
+            <input type="submit" name="select" class="button" value="Selecionar">
+        </form>
+        <table>
+            <caption><h1>Folha de Pagamento</h1></caption>
+            <thead>
+                <tr>
+                    <th rowspan="3">#</th>
+                    <th scope="row">Empregadora</th>
+                    <td colspan="4">ATT Global Network Services Brasil Ltda</td>
+                </tr>
+                <tr>
+                    <th scope="row">CNPJ</th>
+                    <td colspan="4">03.341.093/0001-06</td>
+                </tr>
+                <tr>
+                    <th scope="row">Endereço</th>
+                    <td colspan="4">Rua James Joule, 65 - 6 e 7 andar - Cidade Monções - São Paulo - SP</td>
+                </tr>
+                <tr>
+                    <th scope="col">Matricula</th>
+                    <th scope="col" colspan="5">EMpregado</th>
+                </tr>
+                <tr>
+                    <td>#</td>
+                    <td colspan="5">#user</td>
+                </tr>
+                <tr>
+                    <th scope="col" colspan="2">Cargo</th>
+                    <th scope="col">Data de Admissão</th>
+                    <th scope="col" colspan="3">Endereço</th>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <th scope="col" colspan="2">Bairro</th>
+                    <th scope="col" colspan="2">Cidade</th>
+                    <th scope="col">CEP</th>
+                    <th scope="col">UF</th>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="col" colspan="2">PIS</th>
+                    <th scope="col" colspan="2">CPF</th>
+                    <th scope="col">Período</th>
+                    <th scope="col">Data de Pagamento</th>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="col">Salário Base</th>
+                    <th scope="col" colspan="3">Banco de Pagamento</th>
+                    <th scope="col">Agência</th>
+                    <th scope="col">Conta</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col">Período</th>
+                    <th scope="col">Evento</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Referência</th>
+                    <th scope="col">Proventos</th>
+                    <th scope="col">Descontos</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>R$ 0</td>
+                    <td>R$ 0</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="col">Base INSS</th>
+                    <th scope="col">Base FGTS</th>
+                    <th scope="col">Base IRRF</th>
+                    <th scope="col">FGTS Recolhido</th>
+                    <th scope="col">Total de Proventos</th>
+                    <th scope="col">Total de Descontos</th>
+                </tr>
+                <tr>
+                    <td>R$ 0</td>
+                    <td>R$ 0</td>
+                    <td>R$ 0</td>
+                    <td>R$ 0</td>
+                    <td>R$ 0</td>
+                    <td>R$ 0</td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="5">Líquido a Receber</th>
+                    <td>R$ 0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>

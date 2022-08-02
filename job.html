@@ -9,123 +9,125 @@
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <form action="test.php" method="post" class="filter">
-        <fieldset>
-            <legend>Atualizar Carteira de Trabalho</legend>
-            <select name="data" id="idata">
-                <option value="empty" selected>--- Escolha a atualização que deseja fazer ---</option>
-                <option value="pay">Salário</option>
-                <option value="fire">Data de Demissão</option>
-            </select>
-            <label for="ivalue">Valor R$</label>
-            <input type="number" name="value" id="ivalue">
-            <label for="iwhen">Data da Atualização</label>
-            <input type="date" name="when" id="iwhen" autocomplete="bday" value="2022-08-01" required>
-            <input type="submit" name="update" class="button" value="Atualizar">
-        </fieldset>
-    </form>
-    <table>
-        <caption><h1>Carteira de Trabalho</h1></caption>
-        <thead>
-            <tr>
-                <th scope="row">Empregador</th>
-                <td colspan="3">ATT Global Network Services Brasil Ltda</td>
-            </tr>
-            <tr>
-                <th scope="row">CNPJ</th>
-                <td>03.341.093/0001-06</td>
-                <th scope="row">Data de Admissão</th>
-                <td>01/02/2018</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Salário Atual</th>
-                <td>R$ 0</td>
-                <th scope="row">Atualizado em</th>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">Salário</th>
-                <td>R$ 0</td>
-                <th scope="row">Atualizado em</th>
-                <td></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th scope="row">Data de Demissão</th>
-                <td></td>
-                <th scope="row">Data</th>
-                <td></td>
-            </tr>
-        </tfoot>
-    </table>
-    <form action="test.php" method="post">
-        <fieldset>
-            <legend>Cadastro de Fonte Pagadora</legend>
-            <label for="icompany">Empregador</label>
-            <input type="text" name="company" id="icompany" autocomplete="name" required><br>
-            <label for="icnpj">CNPJ</label>
-            <input type="number" name="cnpj" id="icnpj" placeholder="Somente números" maxlength="14" max="14" required><br>
-            <label for="iaddress">Endereço</label>
-            <input type="text" name="address" id="iaddress" autocomplete="address-line1"><br>
-            <label for="icomplement">Complemento</label>
-            <input type="text" name="complement" id="icomplement" autocomplete="address-level3"><br>
-            <label for="ineighbor">Bairro</label>
-            <input type="text" name="neighbor" id="ineighbor" autocomplete="address-line2"><br>
-            <label for="icity">Cidade</label>
-            <input type="text" name="city" id="icity" autocomplete="address-line3"><br>
-            <label for="ipostal">CEP</label>
-            <input type="text" name="postal" id="ipostal" autocomplete="address-level1" placeholder="Somente números"><br>
-            <label for="istate">Estado</label>
-            <select name="state" id="istate">
-                <optgroup label="Região Sudeste">
-                    <option value="SP" selected>São Paulo</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="ES">Espirito Santos</option>
-                </optgroup>
-                <optgroup label="Região Sul">
-                    <option value="PR">Paraná</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                </optgroup>
-                <optgroup label="Região Sudoeste">
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="GO">Goiás</option>
-                    <option value="DF">Distrito Federal</option>
-                </optgroup>
-                <optgroup label="Região Nordeste">
-                    <option value="BA">Bahia</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="CE">Ceará</option>
-                    <option value="PI">Piauí</option>
-                    <option value="MA">Maranhão</option>
-                </optgroup>
-                <optgroup label="Região Norte">
-                    <option value="AM">Amazonas</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="AC">Acre</option>
-                    <option value="RR">Roraima</option>
-                    <option value="PA">Pará</option>
-                    <option value="AP">Amapá</option>
-                    <option value="TO">Tocantins</option>
-                </optgroup>
-            </select><br>
-            <label for="iregistration">Registro do funcionário</label>
-            <input type="number" name="registration" id="iregistration" required><br>
-            <label for="iadmission">Data de Admissão</label>
-            <input type="date" name="admission" id="iadmission" required>
-        </fieldset>
-        <p>
-            <input type="submit" name="register" class="button" value="Cadastrar">
-        </p>
-    </form>
+    <div class="content">
+        <form action="test.php" method="post" class="filter">
+            <fieldset>
+                <legend>Atualizar Carteira de Trabalho</legend>
+                <select name="data" id="idata">
+                    <option value="empty" selected>--- Escolha a atualização que deseja fazer ---</option>
+                    <option value="pay">Salário</option>
+                    <option value="fire">Data de Demissão</option>
+                </select>
+                <label for="ivalue">Valor R$</label>
+                <input type="number" name="value" id="ivalue">
+                <label for="iwhen">Data da Atualização</label>
+                <input type="date" name="when" id="iwhen" autocomplete="bday" value="2022-08-01" required>
+                <input type="submit" name="update" class="button" value="Atualizar">
+            </fieldset>
+        </form>
+        <table>
+            <caption><h1>Carteira de Trabalho</h1></caption>
+            <thead>
+                <tr>
+                    <th scope="row">Empregador</th>
+                    <td colspan="3">ATT Global Network Services Brasil Ltda</td>
+                </tr>
+                <tr>
+                    <th scope="row">CNPJ</th>
+                    <td>03.341.093/0001-06</td>
+                    <th scope="row">Data de Admissão</th>
+                    <td>01/02/2018</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Salário Atual</th>
+                    <td>R$ 0</td>
+                    <th scope="row">Atualizado em</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Salário</th>
+                    <td>R$ 0</td>
+                    <th scope="row">Atualizado em</th>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Data de Demissão</th>
+                    <td></td>
+                    <th scope="row">Data</th>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <form action="test.php" method="post">
+            <fieldset>
+                <legend>Cadastro de Fonte Pagadora</legend>
+                <label for="icompany">Empregador</label>
+                <input type="text" name="company" id="icompany" autocomplete="name" required><br>
+                <label for="icnpj">CNPJ</label>
+                <input type="number" name="cnpj" id="icnpj" placeholder="Somente números" maxlength="14" max="14" required><br>
+                <label for="iaddress">Endereço</label>
+                <input type="text" name="address" id="iaddress" autocomplete="address-line1"><br>
+                <label for="icomplement">Complemento</label>
+                <input type="text" name="complement" id="icomplement" autocomplete="address-level3"><br>
+                <label for="ineighbor">Bairro</label>
+                <input type="text" name="neighbor" id="ineighbor" autocomplete="address-line2"><br>
+                <label for="icity">Cidade</label>
+                <input type="text" name="city" id="icity" autocomplete="address-line3"><br>
+                <label for="ipostal">CEP</label>
+                <input type="text" name="postal" id="ipostal" autocomplete="address-level1" placeholder="Somente números"><br>
+                <label for="istate">Estado</label>
+                <select name="state" id="istate">
+                    <optgroup label="Região Sudeste">
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espirito Santos</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                    <optgroup label="Região Sudoeste">
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="GO">Goiás</option>
+                        <option value="DF">Distrito Federal</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="CE">Ceará</option>
+                        <option value="PI">Piauí</option>
+                        <option value="MA">Maranhão</option>
+                    </optgroup>
+                    <optgroup label="Região Norte">
+                        <option value="AM">Amazonas</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="AC">Acre</option>
+                        <option value="RR">Roraima</option>
+                        <option value="PA">Pará</option>
+                        <option value="AP">Amapá</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+                </select><br>
+                <label for="iregistration">Registro do funcionário</label>
+                <input type="number" name="registration" id="iregistration" required><br>
+                <label for="iadmission">Data de Admissão</label>
+                <input type="date" name="admission" id="iadmission" required>
+            </fieldset>
+            <p>
+                <input type="submit" name="register" class="button" value="Cadastrar">
+            </p>
+        </form>
+    </div>
 </body>
 </html>

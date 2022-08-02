@@ -9,48 +9,50 @@
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <form action="test.php" method="post">
-        <fieldset>
-            <legend>Adiocionar uma nova despesa</legend>
-            <label for="">Descrição</label>
-            <input type="text" name="description" id="idescription" autocomplete="name" list="expense_list" required>
-            <datalist id="expense_list">
-                <option>Luz</option>
-                <option>Água</option>
-                <option>Gás</option>
-                <option>Condomínio</option>
-                <option>Combustível</option>
-                <option>Telefone</option>
-                <option>Celular</option>
-                <option>Cartão de Crédito</option>
-                <option>Farmácia</option>
-            </datalist>
-            <label for="ivalue">Valor Pago R$</label>
-            <input type="number" name="value" id="ivalue" autocomplete="transaction-currency" required>
-            <label for="idate">Data</label>
-            <input type="date" name="date" id="idate" required>
-            <input type="submit" name="add" class="button" value="Adicionar"><br>
-        </fieldset>
-    </form>
-    <form action="test.php" method = "get" class="filter">
-        <label for="ifilter">Selecione o período que deseja visualizar</label>
-        <input type="month" name="filter" id="ifilter" placeholder="aaaa-mm" value="2022-08">
-        <input type="submit" name="select" class="button" value="Selecionar">
-    </form>
-    <table>
-        <caption><h1>Despesas do Mês</h1></caption>
-        <thead>
-            <th scope="col">Descrição</th>
-            <th>Valor Pago</th>
-        </thead>
-        <tbody>
-            <td></td>
-            <td>R$ 0</td>
-        </tbody>
-        <tfoot>
-            <th scope="row">Total</th>
-            <td>R$ 0</td>
-        </tfoot>
-    </table>
+    <div class="content">
+        <form action="test.php" method="post">
+            <fieldset>
+                <legend>Adiocionar uma nova despesa</legend>
+                <label for="">Descrição</label>
+                <input type="text" name="description" id="idescription" autocomplete="name" list="expense_list" required>
+                <datalist id="expense_list">
+                    <option>Luz</option>
+                    <option>Água</option>
+                    <option>Gás</option>
+                    <option>Condomínio</option>
+                    <option>Combustível</option>
+                    <option>Telefone</option>
+                    <option>Celular</option>
+                    <option>Cartão de Crédito</option>
+                    <option>Farmácia</option>
+                </datalist>
+                <label for="ivalue">Valor Pago R$</label>
+                <input type="number" name="value" id="ivalue" autocomplete="transaction-currency" required>
+                <label for="idate">Data</label>
+                <input type="date" name="date" id="idate" required>
+                <input type="submit" name="add" class="button" value="Adicionar"><br>
+            </fieldset>
+        </form>
+        <form action="test.php" method = "get" class="filter">
+            <label for="ifilter">Selecione o período que deseja visualizar</label>
+            <input type="month" name="filter" id="ifilter" placeholder="aaaa-mm" value="2022-08">
+            <input type="submit" name="select" class="button" value="Selecionar">
+        </form>
+        <table>
+            <caption><h1>Despesas do Mês</h1></caption>
+            <thead>
+                <th scope="col">Descrição</th>
+                <th>Valor Pago</th>
+            </thead>
+            <tbody>
+                <td></td>
+                <td>R$ 0</td>
+            </tbody>
+            <tfoot>
+                <th scope="row">Total</th>
+                <td>R$ 0</td>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>

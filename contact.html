@@ -9,28 +9,30 @@
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <form action="test.php" method="post">
-        <fieldset>
-            <legend>Sua opinião é muito importante</legend>
-            <label for="iwhy">Motivo do Contato</label>
-            <select name="why" id="iwhy">
-                <option value="reclamacao">Reclamação</option>
-                <option value="elogio">Elogio</option>
-                <option value="sugestao" selected>Sugestão</option>
-                <option value="outros">Outros</option>
-            </select><br>
-            <label for="iname">Nome</label>
-            <input type="text" name="name" id="iname" autocomplete="name" required><br>
-            <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail" autocomplete="email" required><br>
-            <label for="itel">Telefone</label>
-            <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4, 5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"><br>
-            <label for="imessage">Deixe sua mensagem</label><br>
-            <textarea name="message" id="imessage" cols="30" rows="10"></textarea>
-        </fieldset>
-        <p>
-            <input type="submit" value="Enviar" class="button">
-        </p>
-    </form>
+    <div class="content">
+        <form action="test.php" method="post">
+            <fieldset>
+                <legend>Sua opinião é muito importante</legend>
+                <label for="iwhy">Motivo do Contato</label>
+                <select name="why" id="iwhy">
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="sugestao" selected>Sugestão</option>
+                    <option value="outros">Outros</option>
+                </select><br>
+                <label for="iname">Nome</label>
+                <input type="text" name="name" id="iname" autocomplete="name" required><br>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required><br>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4, 5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"><br>
+                <label for="imessage">Deixe sua mensagem</label><br>
+                <textarea name="message" id="imessage" cols="30" rows="10"></textarea>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar" class="button">
+            </p>
+        </form>
+    </div>
 </body>
 </html>

@@ -9,84 +9,86 @@
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <form action="validation.php" method="post">
-        <h1>Registrar um novo usuário</h1>
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <label for="iname">Nome</label>
-            <input type="text" name="name" id="iname" placeholder="Nome Completo" autocomplete="name" required><br>
-            <label for="cpf">CPF</label>
-            <input type="number" name="document" id="cpf" placeholder="Somente números" required>
-        </fieldset>
-        <fieldset>
-            <legend>Dados de Acesso</legend>
-            <label for="iuser">Usuário</label>
-            <input type="text" name="user" id="iuser" autocomplete="username" required><br>
-            <label for="ipassword">Senha</label>
-            <input type="password" name="password" id="ipassword" autocomplete="new-password" required>
-        </fieldset>
-        <fieldset>
-            <legend>Dados de Contato</legend>
-            <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail" autocomplete="email" required><br>
-            <label for="iphone">Telefone</label>
-            <input type="tel" name="phone" id="iphone" autocomplete="tel" pattern="^\(\d{2}\)\d{4, 5}-\d{4}$" placeholder="(xx)xxxx-xxxx"><br>
-            <label for="imobile">Celular</label>
-            <input type="tel" name="mobile" id="imobile" autocomplete="tel" pattern="^\(\d{2}\)\d{4, 5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"><br>
-            <label for="iaddress">Endereço</label>
-            <input type="text" name="address" id="iaddress" autocomplete="address-line1"><br>
-            <label for="icomplement">Complemento</label>
-            <input type="text" name="complement" id="icomplement" autocomplete="address-level3"><br>
-            <label for="ineighbor">Bairro</label>
-            <input type="text" name="neighbor" id="ineighbor" autocomplete="address-line2"><br>
-            <label for="icity">Cidade</label>
-            <input type="text" name="city" id="icity" autocomplete="address-line3"><br>
-            <label for="ipostal">CEP</label>
-            <input type="text" name="postal" id="ipostal" autocomplete="address-level1" placeholder="Somente números"><br>
-            <label for="istate">Estado</label>
-            <select name="state" id="istate">
-                <optgroup label="Região Sudeste">
-                    <option value="SP" selected>São Paulo</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="ES">Espirito Santos</option>
-                </optgroup>
-                <optgroup label="Região Sul">
-                    <option value="PR">Paraná</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                </optgroup>
-                <optgroup label="Região Sudoeste">
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="GO">Goiás</option>
-                    <option value="DF">Distrito Federal</option>
-                </optgroup>
-                <optgroup label="Região Nordeste">
-                    <option value="BA">Bahia</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="CE">Ceará</option>
-                    <option value="PI">Piauí</option>
-                    <option value="MA">Maranhão</option>
-                </optgroup>
-                <optgroup label="Região Norte">
-                    <option value="AM">Amazonas</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="AC">Acre</option>
-                    <option value="RR">Roraima</option>
-                    <option value="PA">Pará</option>
-                    <option value="AP">Amapá</option>
-                    <option value="TO">Tocantins</option>
-                </optgroup>
-            </select>
-        </fieldset>
-        <p>
-            <input type="submit" name="save" value="Salvar" class="button">
-        </p>
-    </form>
+    <div class="content">
+        <form action="validation.php" method="post">
+            <h1>Registrar um novo usuário</h1>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="iname">Nome</label>
+                <input type="text" name="name" id="iname" placeholder="Nome Completo" autocomplete="name" required><br>
+                <label for="cpf">CPF</label>
+                <input type="number" name="document" id="cpf" placeholder="Somente números" required>
+            </fieldset>
+            <fieldset>
+                <legend>Dados de Acesso</legend>
+                <label for="iuser">Usuário</label>
+                <input type="text" name="user" id="iuser" autocomplete="username" required><br>
+                <label for="ipassword">Senha</label>
+                <input type="password" name="password" id="ipassword" autocomplete="new-password" required>
+            </fieldset>
+            <fieldset>
+                <legend>Dados de Contato</legend>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required><br>
+                <label for="iphone">Telefone</label>
+                <input type="tel" name="phone" id="iphone" autocomplete="tel" pattern="^\(\d{2}\)\d{4, 5}-\d{4}$" placeholder="(xx)xxxx-xxxx"><br>
+                <label for="imobile">Celular</label>
+                <input type="tel" name="mobile" id="imobile" autocomplete="tel" pattern="^\(\d{2}\)\d{4, 5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"><br>
+                <label for="iaddress">Endereço</label>
+                <input type="text" name="address" id="iaddress" autocomplete="address-line1"><br>
+                <label for="icomplement">Complemento</label>
+                <input type="text" name="complement" id="icomplement" autocomplete="address-level3"><br>
+                <label for="ineighbor">Bairro</label>
+                <input type="text" name="neighbor" id="ineighbor" autocomplete="address-line2"><br>
+                <label for="icity">Cidade</label>
+                <input type="text" name="city" id="icity" autocomplete="address-line3"><br>
+                <label for="ipostal">CEP</label>
+                <input type="text" name="postal" id="ipostal" autocomplete="address-level1" placeholder="Somente números"><br>
+                <label for="istate">Estado</label>
+                <select name="state" id="istate">
+                    <optgroup label="Região Sudeste">
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espirito Santos</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                    <optgroup label="Região Sudoeste">
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="GO">Goiás</option>
+                        <option value="DF">Distrito Federal</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="CE">Ceará</option>
+                        <option value="PI">Piauí</option>
+                        <option value="MA">Maranhão</option>
+                    </optgroup>
+                    <optgroup label="Região Norte">
+                        <option value="AM">Amazonas</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="AC">Acre</option>
+                        <option value="RR">Roraima</option>
+                        <option value="PA">Pará</option>
+                        <option value="AP">Amapá</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <p>
+                <input type="submit" name="save" value="Salvar" class="button">
+            </p>
+        </form>
+    </div>
 </body>
 </html>
